@@ -6,7 +6,7 @@
 
 ## Description
 
-_This project is a webpage that accepts user input of a number and optionally thier name, and returns a range of numbers from 0 to the user's inputted number. The list of numbers includes the following exceptions, ordered from least to most important. For numbers in the list that contain a 1, all digits are replaced with "Beep!" For numbers that contain a 2, all digits are replaced with "Boop!" For numbers that contain a 3, all digits are replaced with "I'm sorry, [name]. I'm afraid I can't do that." When the user does not enter their name, the aforementioned [name] defaults to "Dave". Bootstrap version 3.3.7 and a custom stylesheet both style the webpage._
+_This project is a webpage that accepts user input of a number and optionally thier name, and returns a range of numbers from 0 to the user's inputted number. The list of numbers includes the following exceptions, ordered from least to most important. For numbers in the list that contain a 1, all digits are replaced with "Beep!" For numbers that contain a 2, all digits are replaced with "Boop!" For numbers that contain a 3, all digits are replaced with "I'm sorry, Dave. I'm afraid I can't do that." In instances that the user enters a name, the aforementioned "Dave" is replaced with the user's name for all numbers that both contain a 3 and are divisible by 3. Bootstrap version 3.3.7 and a custom stylesheet both style the webpage._
 
 ## Specifications:
 
@@ -15,6 +15,7 @@ _This project is a webpage that accepts user input of a number and optionally th
 | ------------- |:-------------:| --------------:|
 | The program returns returns an error message when the user does not enter a number | "hello" | "Please enter a number." |
 | The program returns a range of numbers from 0 to the user's inputted number | 4 | 0, 1, 2, 3, 4 |
+| The program returns a range of numbers from the user's inputted number to 0 | 4 | 4, 3, 2, 1, 0 |
 | The program replaces the number 3 with "I'm sorry, Dave. I'm afraid I can't do that." | 3 |   0, 1, 2, "I'm sorry, Dave. I'm afraid I can't do that." |
 | The program replaces the number 2 with "Boop!" | 2 | 0, 1, "Boop!" |
 | The program replaces the number 1 with "Beep!" | 1 | 0, "Beep!" |
