@@ -33,9 +33,13 @@ $(document).ready(function() {
 
     if (isNaN(userInputNumber)) {
       $("#output h3").hide();
-      $("ul#result").text("Please enter a number.")
+      $("ul#result").text("Please enter a number.");
+      $("img#yes-number").hide();
+      $("img#no-number").show();
     } else {
       $("#output h3").show();
+      $("img#yes-number").show();
+      $("img#no-number").hide();
       $(".input-number").text(userInputNumber);
       var listOfNumbers = makeListOfNumbers(userInputNumber, userName);
       listOfNumbers.reverse();
