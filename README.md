@@ -13,6 +13,7 @@ _This project is a webpage that accepts user input of a number and optionally th
 
 | Specification | Example Input | Example Output |
 | ------------- |:-------------:| --------------:|
+| The program returns returns an error message when the user does not enter a number | "hello" | "Please enter a number." |
 | The program returns a range of numbers from 0 to the user's inputted number | 4 | 0, 1, 2, 3, 4 |
 | The program replaces the number 3 with "I'm sorry, Dave. I'm afraid I can't do that." | 3 |   0, 1, 2, "I'm sorry, Dave. I'm afraid I can't do that." |
 | The program replaces the number 2 with "Boop!" | 2 | 0, 1, "Boop!" |
@@ -20,7 +21,7 @@ _This project is a webpage that accepts user input of a number and optionally th
 | The program replaces a multi-digit number containing a 3 with "I'm sorry, Dave. I'm afraid I can't do that." | 13 | 0, "Beep!", "Boop!", "I'm sorry, Dave. I'm afraid I can't do that.", 4, 5, 6, 7, 8, 9, 10, 11, 12, "I'm sorry, Dave. I'm afraid I can't do that." |
 | The program replaces a multi-digit number containing a 2 with "Boop!" | 12 | 0, "Beep!", "Boop!", "I'm sorry, Dave. I'm afraid I can't do that.", 4, 5, 6, 7, 8, 9, 10, 11, "Boop!" |
 | The program replaces a multi-digit number containing a 1 with "Beep!" | 10 | 0, "Beep!", "Boop!", "I'm sorry, Dave. I'm afraid I can't do that.", 4, 5, 6, 7, 8, 9, "Beep!" |
-| When a user inputs their name and a number, the program replaces all occurrence of "Dave" with the user's inputted name | Michelle, 3 | 0, "Beep!", "Boop!", "I'm sorry, Michelle. I'm afraid I can't do that." |
+| When a user inputs their name and a number, the program replaces all occurrence of "Dave" with the user's inputted name | "Michelle", 3 | 0, "Beep!", "Boop!", "I'm sorry, Michelle. I'm afraid I can't do that." |
 
 
 ## Setup/Installation Requirements
