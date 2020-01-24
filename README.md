@@ -21,7 +21,7 @@ _This project is a webpage that accepts user input of a number and optionally th
 | The program replaces a multi-digit number containing a 3 with "I'm sorry, Dave. I'm afraid I can't do that." | 13 | 0, "Beep!", "Boop!", "I'm sorry, Dave. I'm afraid I can't do that.", 4, 5, 6, 7, 8, 9, 10, 11, 12, "I'm sorry, Dave. I'm afraid I can't do that." |
 | The program replaces a multi-digit number containing a 2 with "Boop!" | 12 | 0, "Beep!", "Boop!", "I'm sorry, Dave. I'm afraid I can't do that.", 4, 5, 6, 7, 8, 9, 10, 11, "Boop!" |
 | The program replaces a multi-digit number containing a 1 with "Beep!" | 10 | 0, "Beep!", "Boop!", "I'm sorry, Dave. I'm afraid I can't do that.", 4, 5, 6, 7, 8, 9, "Beep!" |
-| When a user inputs their name and a number, the program replaces all occurrence of "Dave" with the user's inputted name | "Michelle", 3 | 0, "Beep!", "Boop!", "I'm sorry, Michelle. I'm afraid I can't do that." |
+| For all numbers containing a 3 that are also divisible by 3, the program replaces "Dave" with the user's inputted name | "Michelle", 3 | 0, "Beep!", "Boop!", "I'm sorry, Michelle. I'm afraid I can't do that." |
 
 
 ## Setup/Installation Requirements
