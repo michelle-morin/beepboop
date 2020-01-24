@@ -8,6 +8,10 @@ function makeListOfNumbers(number) {
   for (var i = 0; i <= number; i ++) {
     if (i === 3) {
       numbers[i] = "I'm sorry, Dave. I'm afraid I can't do that."
+    } else if (i === 2) {
+      numbers[i] = "Boop!"
+    } else if (i === 1) {
+      numbers[i] = "Beep!"
     }
   }
   return numbers;
