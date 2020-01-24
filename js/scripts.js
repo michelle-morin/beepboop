@@ -5,6 +5,11 @@ function makeListOfNumbers(number) {
   for (var index = 0; index <= number; index ++) {
     numbers.push(index);
   }
+  for (var i = 0; i <= number; i ++) {
+    if (i === 3) {
+      numbers[i] = "I'm sorry, Dave. I'm afraid I can't do that."
+    }
+  }
   return numbers;
 }
 
