@@ -38,6 +38,7 @@ $(document).ready(function() {
       $("#output h3").show();
       $(".input-number").text(userInputNumber);
       var listOfNumbers = makeListOfNumbers(userInputNumber, userName);
+      listOfNumbers.reverse();
       listOfNumbers.forEach(function(number) {
         $("ul#result").append("<li>" + number + "</li>");
       });
