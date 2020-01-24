@@ -44,7 +44,7 @@ $(document).ready(function() {
       $("h3.no-number").hide();
       $("img.yes-number").show();
       $("img.no-number").hide();
-      $(".up-down").text("down");
+      $(".up-down").text("down from");
       $(".input-number").text(userInputNumber);
       var listOfNumbers = makeListOfNumbers(userInputNumber, userName);
       listOfNumbers.reverse();
@@ -74,7 +74,7 @@ $(document).ready(function() {
       $("h3.no-number").hide();
       $("img.yes-number").show();
       $("img.no-number").hide();
-      $(".up-down").text("up");
+      $(".up-down").text("up to");
       $(".input-number").text(userInputNumber);
       var listOfNumbers = makeListOfNumbers(userInputNumber, userName);
       listOfNumbers.forEach(function(number) {
