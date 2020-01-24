@@ -27,7 +27,7 @@ h3 {
 
 .well {
   background-color: #111111;
-  background-image: url(../img/outerspace.jpg);
+  background-image: url(../img/stars.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -78,4 +78,6 @@ img {
 
 ul#result {
   font-family: helvetica, sans-serif;
+  font-size: large;
+  color: #BF0000;
 }
