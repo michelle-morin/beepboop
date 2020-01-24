@@ -19,12 +19,19 @@ $(document).ready(function() {
     var userName = $("input#name").val();
 
     $("ul#result").empty();
-    $(".input-number").text(userInputNumber);
 
-    var listOfNumbers = makeListOfNumbers(userInputNumber);
+    if (isNaN(userInputNumber)) {
+      $("#output h3").hide();
+      $("ul#result").text("Please enter a number.")
+    } else {
+      $("#output h3").show();
+      $(".input-number").text(userInputNumber);
 
-    listOfNumbers.forEach(function(number) {
-      $("ul#result").append("<li>" + number + "</li>");
-    });
+      var listOfNumbers = makeListOfNumbers(userInputNumber);
+  
+      listOfNumbers.forEach(function(number) {
+        $("ul#result").append("<li>" + number + "</li>");
+      });
+    }
   });
 });
