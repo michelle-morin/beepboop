@@ -25,8 +25,8 @@ function makeListOfNumbers(number, userName) {
 $(document).ready(function() {
   $("form").submit(function(event) {
     event.preventDefault();
-    $("#output").show();
     $("ul#result").empty();
+    $("#output").fadeIn();
 
     var userInputNumber = parseInt($("input#number").val());
     var userName = $("input#name").val();
@@ -40,9 +40,7 @@ $(document).ready(function() {
       $("img.yes-number").hide();
       $("img.no-number").show();
     } else {
-      $("h3.yes-number").show();
       $("h3.no-number").hide();
-      $("img.yes-number").show();
       $("img.no-number").hide();
       $(".up-down").text("down from");
       $(".input-number").text(userInputNumber);
@@ -51,12 +49,14 @@ $(document).ready(function() {
       listOfNumbers.forEach(function(number) {
         $("ul#result").append("<li>" + number + "</li>");
       });
+      $("h3.yes-number").show();
+      $("img.yes-number").show();
     }
   });
   $("button#count-up").click(function(event) {
     event.preventDefault();
-    $("#output").show();
     $("ul#result").empty();
+    $("#output").fadeIn();
 
     var userInputNumber = parseInt($("input#number").val());
     var userName = $("input#name").val();
@@ -70,16 +70,16 @@ $(document).ready(function() {
       $("img.yes-number").hide();
       $("img.no-number").show();
     } else {
-      $("h3.yes-number").show();
-      $("h3.no-number").hide();
-      $("img.yes-number").show();
       $("img.no-number").hide();
+      $("h3.no-number").hide();
       $(".up-down").text("up to");
       $(".input-number").text(userInputNumber);
       var listOfNumbers = makeListOfNumbers(userInputNumber, userName);
       listOfNumbers.forEach(function(number) {
         $("ul#result").append("<li>" + number + "</li>");
       });
+      $("h3.yes-number").show();
+      $("img.yes-number").show();
     }
   });
 });
