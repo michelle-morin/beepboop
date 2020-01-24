@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Beep Boop</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Beep Boop Beep Boop</h1>
+        <h3>a number generator inspired by 2001: A Space Odyssey</h3>
+      </div>
+      <div class="well">
+        <form>
+          <div class="form-group">
+            <label for="name">What is your preferred name?</label>
+            <input type="text" id="name" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="number">Please enter a number:</label>
+            <input type="text" id="number" class="form-control">
+          </div>
+          <button type="submit" class="btn">Beep Boop Submit!</button>
+        </form>
+        <div class="well" id="output">
+          <h3>Here's a list of numbers from 0 to <span class="input-number"></span>:</h3>
+          <ul id="result">
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
