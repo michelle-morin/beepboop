@@ -35,6 +35,36 @@ $(document).ready(function() {
     }
 
     if (isNaN(userInputNumber)) {
+      $("h3.no-number").show();
+      $("h3.yes-number").hide();
+      $("img.yes-number").hide();
+      $("img.no-number").show();
+    } else {
+      $("h3.yes-number").show();
+      $("h3.no-number").hide();
+      $("img.yes-number").show();
+      $("img.no-number").hide();
+      $(".up-down").text("down");
+      $(".input-number").text(userInputNumber);
+      var listOfNumbers = makeListOfNumbers(userInputNumber, userName);
+      listOfNumbers.reverse();
+      listOfNumbers.forEach(function(number) {
+        $("ul#result").append("<li>" + number + "</li>");
+      });
+    }
+  });
+  $("button#count-up").click(function(event) {
+    event.preventDefault();
+    $("#output").show();
+    $("ul#result").empty();
+
+    var userInputNumber = parseInt($("input#number").val());
+    var userName = $("input#name").val();
+    if (!userName) {
+      userName = "Dave";
+    }
+
+    if (isNaN(userInputNumber)) {
       $("h3.yes-number").hide();
       $("h3.no-number").show();
       $("img.yes-number").hide();
@@ -44,9 +74,9 @@ $(document).ready(function() {
       $("h3.no-number").hide();
       $("img.yes-number").show();
       $("img.no-number").hide();
+      $(".up-down").text("up");
       $(".input-number").text(userInputNumber);
       var listOfNumbers = makeListOfNumbers(userInputNumber, userName);
-      listOfNumbers.reverse();
       listOfNumbers.forEach(function(number) {
         $("ul#result").append("<li>" + number + "</li>");
       });
