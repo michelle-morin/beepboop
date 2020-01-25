@@ -23,10 +23,22 @@ function makeListOfNumbers(number, userName) {
 // Front-end (user interface) logic:
 
 $(document).ready(function() {
+  function animateCounter() {
+    setTimeout(function() {
+      $("#counting").fadeIn()
+      setTimeout(function() {
+        $("#counting").fadeOut();
+        setTimeout(function() {
+          $("#output").fadeIn();
+        }, 500);
+      }, 1500);
+    }, 500);
+  }
+
   $("form").submit(function(event) {
     event.preventDefault();
     $("ul#result").empty();
-    $("#output").fadeIn();
+    $("#output").hide();
 
     var userInputNumber = parseInt($("input#number").val());
     var userName = $("input#name").val();
@@ -35,11 +47,13 @@ $(document).ready(function() {
     }
 
     if (isNaN(userInputNumber)) {
+      animateCounter();
       $("h3.no-number").show();
       $("h3.yes-number").hide();
       $("img.yes-number").hide();
       $("img.no-number").show();
     } else {
+      animateCounter();
       $("h3.no-number").hide();
       $("img.no-number").hide();
       $(".up-down").text("down from");
@@ -56,7 +70,7 @@ $(document).ready(function() {
   $("button#count-up").click(function(event) {
     event.preventDefault();
     $("ul#result").empty();
-    $("#output").fadeIn();
+    $("#output").hide();
 
     var userInputNumber = parseInt($("input#number").val());
     var userName = $("input#name").val();
@@ -65,11 +79,13 @@ $(document).ready(function() {
     }
 
     if (isNaN(userInputNumber)) {
+      animateCounter();
       $("h3.yes-number").hide();
       $("h3.no-number").show();
       $("img.yes-number").hide();
       $("img.no-number").show();
     } else {
+      animateCounter();
       $("img.no-number").hide();
       $("h3.no-number").hide();
       $(".up-down").text("up to");
