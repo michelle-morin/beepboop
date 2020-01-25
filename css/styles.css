@@ -19,12 +19,13 @@ body {
   align-items: flex-end;
 }
 
-.jumbotron h1, .jumbotron h3 {
+.jumbotron h1, .jumbotron h2 {
   margin-top: 125px;
 }
 
 h3 {
   color: #f5f5f5;
+  padding: 20px;
   -webkit-text-stroke-color: #BF0000;
   -webkit-text-stroke-width: 0.5px;
 }
@@ -70,9 +71,10 @@ input.form-control {
 }
 
 img {
-  height: 300px;
-  width: auto;
+  width: 60%;
+  height: auto;
   margin: 20px;
+  padding: 10px;
 }
 
 #output {
