@@ -1,6 +1,6 @@
 # _Beep-Boop_
 
-#### _Arrays & looping independent project for Epicodus_, _17 January 2020_
+#### _Arrays & looping independent project for Epicodus_, _24 January 2020_
 
 #### By _**Michelle Morin**_
 
